@@ -1,13 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
 
 body{ 
     background-image:url('https://cdn.pixabay.com/photo/2018/03/04/21/43/background-3199325_1280.jpg'); 
-    background-size: auto 100vh; 
+    background-size: auto 100vh;
+    backdrop-filter: blur(4px); 
     font-family: Arial; 
     height: 100vh;
   } 
   
-  .menu ul { 
-    background-color: white; 
+  header{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center; 
+  }
+
+.menu{
+  background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+}
+
+  .menu ul {  
     display: flex; 
     justify-content: space-around; 
   } 
@@ -33,4 +52,13 @@ body{
   
   .site-subtitle {
     font-style: italic;
+  }
+  
+  section{
+    background-color: whitesmoke;
+  }
+  
+  .img-portfolio{
+    height: 180px;
+    width: 180px;
   }
