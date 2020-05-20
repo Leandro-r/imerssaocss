@@ -6,7 +6,7 @@
 }
 
 body{ 
-    background-image:url('https://cdn.pixabay.com/photo/2018/03/04/21/43/background-3199325_1280.jpg'); 
+    background-image:url('https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'); 
     background-size: auto 100vh;
     backdrop-filter: blur(3px); 
     font-family: 'Montserrat', sans-serif; 
@@ -36,16 +36,16 @@ body{
 
   header{
     display: flex;
-    height: 50vh;
+    height: 100vh;
     justify-content: center;
     align-items: center; 
   }
 
-.menu{
+.menu {
   background-color: white;
-  position: fixed;
-  width: 100vw;
+  position: fixed; 
   top: 0;
+  width: 100vw; 
 }
 
 .menu a {
@@ -54,7 +54,7 @@ body{
 }
 
 .menu a:hover {
-  background-color:#eefafa;
+  background-color:#fbf300;
   border-radius: 15px;
   font-size: 1.1em;
 }
@@ -68,7 +68,7 @@ body{
 } 
 
 a { 
-  color: teal; 
+  color: #282D2D; 
   text-decoration: none; 
 } 
 
@@ -78,11 +78,12 @@ a:hover {
 
 .site-subtitle, 
 .site-title { 
-  color: whitesmoke; 
+  color: whitesmoke;
   text-align: center; 
 } 
 
 .site-title{
+  color:#fbf300;
   font-size: 4em;
   font-family: 'Righteous', cursive;
 }
@@ -93,20 +94,44 @@ a:hover {
 }
 
 .portfolio{
+  height: 100vh;
+  background-color:whitesmoke ;
   padding: 2em;
-  color: whitesmoke;
+  color: #282D2D; 
 }
 
 .portfolio h2{
   font-family: 'Roboto', sans-serif;
-  color: whitesmoke;
+  color: #fbf300;
   margin-bottom: 1.5em;
   font-size: 2em;
+  text-align: center;
+  text-shadow:black 1px 1px 3px;
+}
+
+@media (min-width: 560px){
+  .portfolio h2{
+    text-align: center;  
+  }
 }
 
 .portfolio .grid{
   display: grid;
   gap: 2em;
+}
+
+@media (min-width: 560px){
+  .portfolio .grid{
+    grid-template-columns: repeat(2, 240px);
+    justify-content: center;  
+  }
+}
+
+@media (min-width: 880px){
+  .portfolio .grid{
+    grid-template-columns: repeat(3, 260px);
+    justify-content: center;
+  }
 }
 
 .portfolio figure{
