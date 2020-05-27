@@ -5,10 +5,13 @@
   box-sizing: border-box; 
 }
 
-body{ 
+html{
+  scroll-behavior: smooth;
+}
+
+body{
     background-image:url('https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80'); 
-    background-size: auto 100vh;
-    backdrop-filter: blur(3px); 
+    background-size: auto 100vh; 
     font-family: 'Montserrat', sans-serif; 
     height: 100vh;
     font-size: 14px;
@@ -35,37 +38,39 @@ body{
   }
 
   header{
+    align-items: center;
     display: flex;
     height: 100vh;
-    justify-content: center;
-    align-items: center; 
+    justify-content: center; 
   }
 /*------------------------------estilos do menu*/
 .menu {
   background-color: white;
-  position: fixed; 
-  top: 0;
+  position: fixed;
   width: 100vw; 
+  top: 0;
 }
 
-.menu a {
-  display: block;
-  padding: 10px 20px;
-}
-
-.menu a:hover {
-  background-color:#fbf300;
-  border-radius: 2px;
-  font-size: 1.1em;
-}
 .menu ul {  
   display: flex; 
   justify-content: space-around; 
 } 
 
 .menu li { 
-  list-style: none; 
+  list-style: none;
+  padding: 4px; 
 } 
+
+.menu a {
+  display: block;
+  padding: 10px 20px;
+}
+
+.menu a:hover{
+  background-color:#fbf300;
+  border-radius: 2px;
+  font-size: 1.1em;
+}
 
 a { 
   color: #282D2D; 
@@ -94,7 +99,7 @@ a:hover {
 }
 
 .portfolio{
-  height: 100vh;
+  height: auto 100vh;
   background-color:grey;
   padding: 2em;
   color: #282D2D; 
@@ -103,6 +108,7 @@ a:hover {
 .portfolio h2{
   font-family: 'Roboto', sans-serif;
   color: whitesmoke;
+  padding-top: 1.3em;
   margin-bottom: 1.5em;
   font-size: 2em;
   text-align: center;
@@ -135,7 +141,6 @@ a:hover {
   }
 }
 
-
 @media (min-width: 880px){
   .portfolio .grid{
     grid-template-columns: repeat(3, 260px);
@@ -143,6 +148,7 @@ a:hover {
   }
 }
 /*------------------------------estilos do portfolio*/
+
 .portfolio figure{
   text-align: center;
 }
@@ -162,6 +168,7 @@ a:hover {
   font-family: 'Roboto', sans-serif;
   color: whitesmoke;
   margin-bottom: 1.5em;
+  padding: 1.5em;
   font-size: 2em;
   text-align: center;
   text-shadow:black 1px 1px 3px;
@@ -171,5 +178,16 @@ a:hover {
   color: #fbf300; 
 }
 
+.contato{
+  height: 100vh;
+  background-color:whitesmoke;
+  text-align: center;
+  padding: 2em;
+}
 
+.contato h2 {
+  text-align: center;
+  padding: 1.6em;
+  margin: 1.6em;
+}
 
