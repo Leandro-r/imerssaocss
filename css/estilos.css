@@ -98,25 +98,29 @@ a:hover {
   line-height: 1.8em;
 }
 
+.contato,
 .portfolio{
-  height: auto 100vh;
   background-color: white;
+  color: #282D2D;
+  min-height: 100vh;
   padding: 2em;
-  color: #282D2D; 
 }
 
+.contato h2,
 .portfolio h2{
-  font-family: 'Roboto', sans-serif;
   color: whitesmoke;
-  padding-top: 1em;
-  margin-bottom: 1em;
+  font-family: 'Roboto', sans-serif;
   font-size: 2em;
+  margin-bottom: 1.5em;
+  padding-top: 1em;  
   text-align: center;
   text-shadow:black 1px 1px 3px;
 }
+
+.contato h2:hover,
 .portfolio h2:hover{
+  color: #fbf300;
   font-family: 'Roboto', sans-serif;
-  color: #fbf300; 
   text-shadow:black 1px 1px 3px;
 }
 /*------------------------------breakpoint response*/
@@ -141,16 +145,16 @@ a:hover {
 
 @media (min-width: 880px){
   .portfolio .grid{
-    grid-template-columns: repeat(3, 260px);
     align-content: center;
+    grid-template-columns: repeat(3, 260px);
     justify-content: center;
     height: calc(100vh - 8em - 48px);
   }
 }
 @media (min-width: 1300px){
   .portfolio .grid{
-    grid-template-columns: repeat(3, 280px);
     align-content: center;
+    grid-template-columns: repeat(3, 280px);
     justify-content: center;
     height: calc(100vh - 8em - 48px);
   }
@@ -175,6 +179,7 @@ a:hover {
   text-align: center;
   padding: 2em;
 }
+
 .content h2{
   font-family: 'Roboto', sans-serif;
   color: whitesmoke;
@@ -189,15 +194,31 @@ a:hover {
   color: #fbf300; 
 }
 
-.contato{
-  height: 100vh;
-  background-color:whitesmoke;
-  text-align: center;
-  padding: 2em;
+.contato .icons{
+    text-align:center;
+}
+.contato a{
+  font-size: 4em;
 }
 
-.contato h2 {
-  text-align: center;
-  padding: 1.6em;
-  margin: 1.6em;
+.contato a:hover{
+  text-decoration: none;
 }
+/*incluir formatações hover nos icones de contato*/
+
+.fa-twitter:hover{
+  color: #00acee;
+}
+
+.fa-linkedin:hover{
+  color:#0e76a8;
+}
+
+.fa-envelope:hover{
+  color:#fbf300;
+}
+
+.fa-github:hover{
+  color:#6f42c1;
+}
+
